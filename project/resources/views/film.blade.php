@@ -5,7 +5,7 @@
 @section('content')
 
     <section id="serie_film_release">
-        <h1>film</h1>
+        <h1>serie tv</h1>
     </section>
 
 @endsection
