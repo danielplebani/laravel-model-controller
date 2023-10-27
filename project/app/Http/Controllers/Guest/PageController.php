@@ -12,4 +12,19 @@ class PageController extends Controller
         //dd(Movie::all());
         return view('main', ['movies' => Movie::all()]);
     }
+
+    public function film()
+    {
+        return view('film');
+    }
+
+    public function serie()
+    {
+        return view('serie');
+    }
+
+    public function releases()
+    {
+        return view('releases');
+    }
 }

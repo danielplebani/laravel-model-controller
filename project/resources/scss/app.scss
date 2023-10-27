@@ -2,10 +2,58 @@
 @use "./partials/footer";
 @import "~bootstrap/scss/bootstrap";
 
-#main {
-    background-color: antiquewhite;
-}
+body {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(197, 46, 46, 1) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    font-family: Georgia, "Times New Roman", Times, serif;
 
-*{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    #main {
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(197, 46, 46, 1) 50%,
+            rgba(0, 0, 0, 1) 100%
+        );
+
+        .card {
+            width: calc(100% / 5);
+            border: none;
+            background: linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(120, 123, 51, 1) 50%,
+                rgba(0, 0, 0, 1) 100%
+            );
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.537);
+
+            li {
+                color: white;
+                border: none;
+                background-color: transparent;
+            }
+
+            .card-title {
+                font-size: xx-large;
+                background: linear-gradient(yellow,#eee);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .card-original-title{
+                font-size: small;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+
+    #serie_film_release{
+        height: 70vh;
+        text-align: center;
+        padding-top: 6rem;
+    }
 }

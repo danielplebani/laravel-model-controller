@@ -15,3 +15,7 @@ use App\Http\Controllers\Guest\PageController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/film', [PageController::class, 'film'])->name('film');
+Route::get('/serie', [PageController::class, 'serie'])->name('serie');
+Route::get('/releases', [PageController::class, 'releases'])->name('releases');
+
