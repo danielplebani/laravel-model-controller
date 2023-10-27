@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel @yield('page-title','main')</title>
+    <title>list of movies</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,12 +15,15 @@
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
+
+    @include('partials.header')
 
     <main class="bg-light">
         @yield('content')
     </main>
 
+    @include('partials.footer')
 </body>
 
 </html>

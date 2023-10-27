@@ -9,6 +9,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('main', ['Movie' => Movie::all()]);
+        //dd(Movie::all());
+        return view('main', ['movies' => Movie::all()]);
     }
 }
